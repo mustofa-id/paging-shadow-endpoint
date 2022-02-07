@@ -23,7 +23,10 @@
 </script>
 
 <main>
-	<h1>Todo</h1>
+	<div style="display: flex; align-items: baseline; line-height: 0;">
+		<h1>Todo</h1>
+		<em>&MediumSpace;(shadow endpoint)</em>
+	</div>
 	<div>
 		<button on:click={() => paginate(-1)} disabled={paging.page === '1'}>Prev</button>
 		<button on:click={() => paginate(1)}>Next</button>
